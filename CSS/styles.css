@@ -99,10 +99,13 @@ color: var(--aksent-color);
 }
 .hero {
     display: flex;
-    background-color: rgba(47, 48, 58, 0.8);
-    
+    background-image: linear-gradient(rgba(47, 48, 58, 0.8),
+     rgba(47, 48, 58, 0.8)
+     ), url(../images/Header-img.jpg);
+    background-repeat: no-repeat;
+   background-size: 1600px 600px;
     padding-top: 200px;
-    padding-bottom: 280px;
+    padding-bottom: 200px;
 }
 .hero-title {
     margin-top: 0px;
@@ -141,6 +144,9 @@ p {
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
+}
+.our-features {
+    padding-bottom: 0px;
 }
 .special {
     display: flex;
@@ -257,17 +263,29 @@ color: var(--main-text-color);
     justify-content: center;
     padding-left: 0px;
 }
-.icon:hover,
-.icon:focus {
-    background-color: var(--aksent-color);
-}
 .icon:not(:last-child) {
     margin-right: 10px;
 }
-.team-icon-img {
-    ;
+.team-icon-social-list {
+display: flex;
+    justify-content: center;
+    align-items: center;
     width: 44px;
     height: 44px;
+    border-radius: 50%;
+    background-color: var(--title-dark-theme-color)
+}
+.team-icon-social-list:hover {
+    background-color: var(--aksent-color);
+}
+.team-icon-list-svg {
+   width: 20px;
+    height: 20px;
+    fill: #AFB1B8;
+}
+.team-icon-social-list:hover .team-icon-list-svg
+{
+    fill: var(--title-dark-theme-color);
 }
 .our-clients {
     display: flex;
