@@ -24,10 +24,14 @@
             <a class="navigation-link link" href="">Контакты</a> </li>
     </ul>
 </nav>
-    <ul class="header-address list">
-        <li> <a class="header-mailto link" href="mailto:info@devstudio.com">info@devstudio.com</a> </li>
-        <li> <a class="header-tel link" href="tel:+380961111111">+38 096 111 11 11</a> </li>
-    </ul>
+<ul class="header-address list">
+    <li class="header-address-list">
+        <a class="header-mailto link" href="mailto:info@devstudio.com"> 
+        <svg class="header-address-list-svg" width="16" height="11"><use href="./images/sprite.svg#icon-envelope" ></use></svg>info@devstudio.com</a> </li>
+    <li class="header-address-list">
+        <a class="header-tel link" href="tel:+380961111111"> 
+        <svg class="header-address-list-svg" width="10" height="15"><use href="./images/sprite.svg#icon-smartphone" ></use></svg>+38 096 111 11 11</a> </li>
+</ul>
     </div>
 </header>
     <main>
@@ -46,7 +50,7 @@
             <a class="portfolio-link link" href=""> <img src="./images/tekhno.jpg" alt="Технокряк">
             <h2 class="subtitle-portfolio">Технокряк</h2>
             <p class="description-portfolio">Веб-сайт</p>
-            <p class="text-portfolio">Технокряк это современная площадка распространения коронавируса. 
+            <p hidden class="text-portfolio">Технокряк это современная площадка распространения коронавируса. 
                 Компании используют эту платформу для цифрового шпионажа и атак 
                 на защищённые сервера конкурентов.</p> </a>
         </li>
@@ -132,20 +136,24 @@
           </div>
           <div class="footer-subscribe">
           <b class="footer-subtitle">ПРИСОЕДИНЯЙТЕСЬ</b>
-                  <ul class="footer-icons list">
-              <li class="footer-icons-label"> 
-               <a href=""><img src="./images/instagram-f.svg" alt="Instagram logo"/> </a>
-              </li>
-              <li class="footer-icons-label"> 
-                  <a  href=""> <img src="./images/twitter-f.svg" alt="Twitter logo"/> </a>
-              </li>
-              <li class="footer-icons-label"> 
-                  <a  href=""> <img src="./images/facebook-f.svg" alt="Facebook logo"/> </a>
-              </li>
-              <li class="footer-icons-label"> 
-                  <a  href=""> <img src="./images/linkedin-f.svg" alt="Linkedin logo"/> </a>
-              </li>
-          </ul>
+          <ul class="footer-icons list">
+            <li class="footer-icons-label"> 
+             <a class="footer-icon-list" href=""><svg class="footer-icon-list-svg">
+                <use href="./images/sprite.svg#icon-instagram-f"></use></svg></a>
+                     </li>
+            <li class="footer-icons-label"> 
+                <a class="footer-icon-list" href=""> <svg class="footer-icon-list-svg">
+                    <use href="./images/sprite.svg#icon-twitter-f"></use></svg></a>
+            </li>
+            <li class="footer-icons-label"> 
+                <a class="footer-icon-list" href=""> <svg class="footer-icon-list-svg">
+                    <use href="./images/sprite.svg#icon-facebook-f"></use></svg></a>
+            </li>
+            <li class="footer-icons-label"> 
+                <a class="footer-icon-list" href=""> <svg class="footer-icon-list-svg">
+                    <use href="./images/sprite.svg#icon-linkedin-f"></use></svg></a>
+            </li>
+        </ul>
           </div>
           <div class="footer-subtitle-subtitle">
               <b class="footer-subtitle">ПОДПИШИТЕСЬ НА РАССЫЛКУ</b>
